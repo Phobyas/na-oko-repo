@@ -1,0 +1,118 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  33% {
+    transform: scale(0.8) rotate(120deg);
+  }
+  66% {
+    transform: scale(1.2) rotate(240deg);
+  }
+}
+
+@keyframes morph-reverse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  33% {
+    transform: scale(1.2) rotate(-120deg);
+  }
+  66% {
+    transform: scale(0.8) rotate(-240deg);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(10px) translateX(-5px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+}
+
+@keyframes float-reverse {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(10px) translateX(-10px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(5px);
+  }
+  75% {
+    transform: translateY(15px) translateX(10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  animation: fade-in 0.8s ease-out 0.3s forwards;
+}
+
+.animate-fade-in-delay-2 {
+  opacity: 0;
+  animation: fade-in 0.8s ease-out 0.6s forwards;
+}
+
+.animate-fade-in-delay-3 {
+  opacity: 0;
+  animation: fade-in 0.8s ease-out 0.9s forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out forwards;
+}
+
+.animate-morph {
+  animation: morph 8s ease-in-out infinite;
+}
+
+.animate-morph-reverse {
+  animation: morph-reverse 8s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 5s ease-in-out infinite;
+}
