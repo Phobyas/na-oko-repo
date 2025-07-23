@@ -47,7 +47,7 @@ const HeroVariantA = () => {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-4 pb-2">
+            <div className="absolute bottom-0 left-0 right-0 p-4 pb-6">
               <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm rounded-full px-2.5 py-1 mb-2.5 sm:mb-3">
                 <div className="w-1 h-1 bg-white rounded-full animate-pulse"></div>
                 <span className="text-[10px] sm:text-[11px] text-white/90 tracking-wider font-light">
