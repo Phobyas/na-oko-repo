@@ -54,7 +54,7 @@ const HeroVariantB = () => {
 
   return (
     <section
-      className="relative min-h-screen lg:h-screen flex items-center transition-all duration-1000 overflow-x-hidden overflow-y-auto lg:overflow-hidden"
+      className="relative h-screen lg:h-screen flex items-center transition-all duration-1000 overflow-hidden"
       style={{
         background: slides[activeSlide].bg,
       }}
@@ -81,10 +81,10 @@ const HeroVariantB = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10 py-8 sm:py-12 lg:py-0">
-        <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10 py-4 sm:py-8 lg:py-0">
+        <div className="grid lg:grid-cols-2 gap-3 sm:gap-6 lg:gap-12 items-center">
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-3 sm:mb-4 animate-fade-in shadow-lg">
+            <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 sm:px-4 sm:py-2 mb-2 sm:mb-3 animate-fade-in shadow-lg">
               <span className="text-red-500 font-bold text-sm sm:text-base">
                 -30%
               </span>
@@ -93,13 +93,13 @@ const HeroVariantB = () => {
               </span>
             </div>
 
-            <div className="mb-2 sm:mb-3 animate-fade-in">
+            <div className="mb-1 sm:mb-2 animate-fade-in">
               <span className="text-gray-700 text-sm sm:text-base font-light">
                 {slides[activeSlide].title}
               </span>
             </div>
 
-            <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-3 sm:mb-4 leading-[0.9] animate-scale-in">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-2 sm:mb-3 leading-[0.9] animate-scale-in">
               <span
                 className="inline-block transform -rotate-3 text-white drop-shadow-2xl"
                 style={{ textShadow: "2px 2px 0 rgba(0,0,0,0.1)" }}
@@ -115,16 +115,16 @@ const HeroVariantB = () => {
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg mb-1 sm:mb-2 font-light text-gray-700 animate-fade-in-delay max-w-lg mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base lg:text-lg mb-1 font-light text-gray-700 animate-fade-in-delay max-w-lg mx-auto lg:mx-0">
               {slides[activeSlide].subtitle}
             </p>
-            <p className="text-xs sm:text-sm lg:text-base mb-4 sm:mb-6 text-gray-600 animate-fade-in-delay max-w-lg mx-auto lg:mx-0">
+            <p className="text-xs sm:text-sm lg:text-base mb-3 sm:mb-5 text-gray-600 animate-fade-in-delay max-w-lg mx-auto lg:mx-0">
               Odkryj kolekcję stworzoną z myślą o Tobie
             </p>
 
-            <div className="flex flex-col xs:flex-row justify-center lg:justify-start gap-3 sm:gap-4 animate-fade-in-delay-2">
+            <div className="flex flex-col xs:flex-row justify-center lg:justify-start gap-2 sm:gap-3 animate-fade-in-delay-2">
               <button
-                className="group relative px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold text-white overflow-hidden transition-all duration-300 transform hover:scale-105 hover:rotate-1 shadow-xl w-full xs:w-auto"
+                className="group relative px-5 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-4 text-xs sm:text-sm lg:text-base font-bold text-white overflow-hidden transition-all duration-300 transform hover:scale-105 hover:rotate-1 shadow-xl w-full xs:w-auto"
                 style={{ backgroundColor: slides[activeSlide].accent }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -148,12 +148,12 @@ const HeroVariantB = () => {
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               </button>
 
-              <button className="px-6 sm:px-8 py-3 sm:py-4 text-gray-700 text-sm sm:text-base font-medium border-2 border-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300 backdrop-blur-sm w-full xs:w-auto">
+              <button className="px-5 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-4 text-gray-700 text-xs sm:text-sm lg:text-base font-medium border-2 border-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300 backdrop-blur-sm w-full xs:w-auto">
                 Katalog PDF
               </button>
             </div>
 
-            <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6 animate-fade-in-delay-3">
+            <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-3 sm:mt-5 animate-fade-in-delay-3">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
                   <img
@@ -165,14 +165,14 @@ const HeroVariantB = () => {
                 ))}
               </div>
               <p className="text-gray-700 text-[10px] sm:text-xs">
-                <span className="font-bold">2,137</span> klientek
+                <span className="font-bold">2,122</span> klientek
               </p>
             </div>
           </div>
 
           <div className="order-1 lg:order-2 relative">
             <div
-              className="relative h-[300px] xs:h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none"
+              className="relative h-[280px] xs:h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none"
               onMouseEnter={() => !isMobile && setIsHovered(true)}
               onMouseLeave={() => !isMobile && setIsHovered(false)}
             >
@@ -205,7 +205,7 @@ const HeroVariantB = () => {
               ))}
             </div>
 
-            <div className="flex justify-center gap-2 mt-3 sm:mt-4">
+            <div className="flex justify-center gap-1.5 sm:gap-2 mt-2 sm:mt-3">
               {slides.map((_, index) => (
                 <button
                   key={index}
