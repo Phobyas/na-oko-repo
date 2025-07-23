@@ -47,7 +47,7 @@ const HeroVariantA = () => {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-4 pb-[calc(env(safe-area-inset-bottom,0px)+1rem)]">
+            <div className="absolute bottom-0 left-0 right-0 p-4 pb-2">
               <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm rounded-full px-2.5 py-1 mb-2.5 sm:mb-3">
                 <div className="w-1 h-1 bg-white rounded-full animate-pulse"></div>
                 <span className="text-[10px] sm:text-[11px] text-white/90 tracking-wider font-light">
@@ -180,7 +180,7 @@ const HeroVariantA = () => {
             <div className="max-w-md">
               <div className="flex items-center gap-4 mb-8 animate-fade-in">
                 <div className="h-px bg-gray-300 w-12"></div>
-                <span className="text-[10px] lg:text-xs tracking-[0.2em] text-gray-500 font-light">
+                <span className="text-[10px] lg:text-xs tracking-[0.2em] text-gray-500 font-normal">
                   NOUVELLE COLLECTION
                 </span>
               </div>
@@ -197,7 +197,7 @@ const HeroVariantA = () => {
                 </span>
               </h1>
 
-              <p className="text-sm lg:text-base text-gray-600 font-light leading-relaxed mb-8 animate-fade-in-delay">
+              <p className="text-sm lg:text-base text-gray-600 font-normal leading-relaxed mb-8 animate-fade-in-delay">
                 Kolekcja FW24 to symfonia minimalizmu i wyrafinowania. 50
                 starannie wyselekcjonowanych projektów, gdzie każdy detal ma
                 znaczenie.
