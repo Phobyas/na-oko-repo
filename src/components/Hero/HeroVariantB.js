@@ -54,8 +54,10 @@ const HeroVariantB = () => {
 
   return (
     <section
-      className="relative min-h-screen lg:h-screen flex items-center transition-all duration-1000 overflow-hidden"
-      style={{ background: slides[activeSlide].bg }}
+      className="relative min-h-screen lg:h-screen flex items-center transition-all duration-1000 overflow-x-hidden overflow-y-auto lg:overflow-hidden"
+      style={{
+        background: slides[activeSlide].bg,
+      }}
     >
       <div className="absolute inset-0 hidden md:block">
         <div
@@ -79,7 +81,7 @@ const HeroVariantB = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10 py-6 sm:py-8 lg:py-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10 py-8 sm:py-12 lg:py-0">
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 items-center">
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-3 sm:mb-4 animate-fade-in shadow-lg">
@@ -163,14 +165,14 @@ const HeroVariantB = () => {
                 ))}
               </div>
               <p className="text-gray-700 text-[10px] sm:text-xs">
-                <span className="font-bold">2,112</span> klientek
+                <span className="font-bold">2,137</span> klientek
               </p>
             </div>
           </div>
 
           <div className="order-1 lg:order-2 relative">
             <div
-              className="relative h-[280px] xs:h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none"
+              className="relative h-[300px] xs:h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none"
               onMouseEnter={() => !isMobile && setIsHovered(true)}
               onMouseLeave={() => !isMobile && setIsHovered(false)}
             >

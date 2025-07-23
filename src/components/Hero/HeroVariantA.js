@@ -13,8 +13,8 @@ const HeroVariantA = () => {
 
   return (
     <section className="relative min-h-screen bg-gray-50 overflow-hidden">
-      <div className="relative h-screen">
-        <div className="lg:hidden h-full flex flex-col">
+      <div className="relative min-h-screen lg:h-screen">
+        <div className="lg:hidden min-h-screen flex flex-col relative">
           <div className="absolute top-0 left-0 right-0 z-30 p-4 bg-gradient-to-b from-white via-white/90 to-transparent">
             <div className="flex justify-between items-center">
               <div className="text-[10px] text-gray-600 font-light tracking-wider">
@@ -31,7 +31,7 @@ const HeroVariantA = () => {
             </div>
           </div>
 
-          <div className="relative h-full">
+          <div className="relative min-h-screen">
             <div
               className={`absolute inset-0 transition-all duration-1000 ${
                 imageLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"
@@ -47,50 +47,56 @@ const HeroVariantA = () => {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-6 pb-8">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 mb-4">
-                <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
-                <span className="text-[11px] text-white/90 tracking-wider font-light">
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 pb-[calc(env(safe-area-inset-bottom,0px)+5rem)] sm:pb-8">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-sm rounded-full px-2.5 py-1 sm:px-3 sm:py-1.5 mb-3 sm:mb-4">
+                <div className="w-1 sm:w-1.5 h-1 sm:h-1.5 bg-white rounded-full animate-pulse"></div>
+                <span className="text-[10px] sm:text-[11px] text-white/90 tracking-wider font-light">
                   NOUVELLE COLLECTION
                 </span>
               </div>
 
-              <h1 className="mb-4 animate-fade-in">
-                <span className="block text-4xl font-thin text-white leading-[0.9]">
+              <h1 className="mb-3 sm:mb-4 animate-fade-in">
+                <span className="block text-3xl sm:text-4xl font-thin text-white leading-[0.9]">
                   ODKRYJ SWOJĄ
                 </span>
-                <span className="block text-4xl font-normal text-white leading-[1.1] mt-1">
+                <span className="block text-3xl sm:text-4xl font-normal text-white leading-[1.1] mt-1">
                   <em>Wyjątkowość</em>
                 </span>
               </h1>
 
-              <p className="text-white/80 text-sm font-light leading-relaxed mb-6 animate-fade-in-delay">
+              <p className="text-white/80 text-[11px] sm:text-xs lg:text-sm font-light leading-relaxed mb-3 sm:mb-4 animate-fade-in-delay">
                 Kolekcja FW24. 50 projektów, gdzie każdy detal ma znaczenie.
               </p>
 
-              <div className="grid grid-cols-2 gap-3 animate-fade-in-delay-2">
-                <button className="bg-white text-black py-3 px-4 text-xs tracking-wider font-medium">
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 animate-fade-in-delay-2">
+                <button className="bg-white text-black py-2.5 sm:py-3 px-3 sm:px-4 text-[10px] sm:text-xs tracking-wider font-medium">
                   KOLEKCJA
                 </button>
-                <button className="border border-white/70 text-white py-3 px-4 text-xs tracking-wider backdrop-blur-sm">
+                <button className="border border-white/70 text-white py-2.5 sm:py-3 px-3 sm:px-4 text-[10px] sm:text-xs tracking-wider backdrop-blur-sm">
                   LOOKBOOK
                 </button>
               </div>
 
-              <div className="flex items-center gap-6 mt-6 text-white/70 animate-fade-in-delay-3">
-                <div className="flex items-center gap-2">
-                  <span className="text-lg font-thin">2.5K</span>
-                  <span className="text-[10px] tracking-wider">KLIENTEK</span>
+              <div className="flex items-center justify-between gap-2 mt-4 sm:mt-6 text-white/70 animate-fade-in-delay-3">
+                <div className="flex items-center gap-1 sm:gap-2">
+                  <span className="text-base sm:text-lg font-thin">2.5K</span>
+                  <span className="text-[9px] sm:text-[10px] tracking-wider">
+                    KLIENTEK
+                  </span>
                 </div>
-                <div className="w-px h-4 bg-white/30"></div>
-                <div className="flex items-center gap-2">
-                  <span className="text-lg font-thin">4.9</span>
-                  <span className="text-[10px] tracking-wider">★★★★★</span>
+                <div className="w-px h-3 sm:h-4 bg-white/30"></div>
+                <div className="flex items-center gap-1 sm:gap-2">
+                  <span className="text-base sm:text-lg font-thin">4.9</span>
+                  <span className="text-[9px] sm:text-[10px] tracking-wider">
+                    ★★★★★
+                  </span>
                 </div>
-                <div className="w-px h-4 bg-white/30"></div>
-                <div className="flex items-center gap-2">
-                  <span className="text-lg font-thin">24H</span>
-                  <span className="text-[10px] tracking-wider">DOSTAWA</span>
+                <div className="w-px h-3 sm:h-4 bg-white/30"></div>
+                <div className="flex items-center gap-1 sm:gap-2">
+                  <span className="text-base sm:text-lg font-thin">24H</span>
+                  <span className="text-[9px] sm:text-[10px] tracking-wider">
+                    DOSTAWA
+                  </span>
                 </div>
               </div>
             </div>
@@ -116,7 +122,7 @@ const HeroVariantA = () => {
         <div className="hidden lg:grid lg:grid-cols-12 gap-0 h-full">
           <div className="absolute top-0 left-0 right-0 z-30 p-6 sm:p-8 lg:p-12">
             <div className="flex justify-between items-center">
-              <div className="text-xs sm:text-sm text-gray-800 font-regular tracking-wider">
+              <div className="text-xs sm:text-sm text-gray-600 font-normal tracking-wider">
                 WARSZAWA •{" "}
                 {currentTime
                   .toLocaleDateString("pl-PL", {
@@ -137,7 +143,7 @@ const HeroVariantA = () => {
 
           <div className="lg:col-span-1 flex flex-col justify-center items-center p-8 bg-white">
             <div
-              className="text-[10px] lg:text-xs tracking-[0.3em] text-gray-600 font-normal"
+              className="text-[10px] lg:text-xs tracking-[0.3em] text-gray-400 font-normal"
               style={{
                 writingMode: "vertical-rl",
                 textOrientation: "mixed",
