@@ -116,7 +116,7 @@ const HeroVariantA = () => {
         <div className="hidden lg:grid lg:grid-cols-12 gap-0 h-full">
           <div className="absolute top-0 left-0 right-0 z-30 p-6 sm:p-8 lg:p-12">
             <div className="flex justify-between items-center">
-              <div className="text-xs sm:text-sm text-gray-600 font-light tracking-wider">
+              <div className="text-xs sm:text-sm text-gray-800 font-regular tracking-wider">
                 WARSZAWA •{" "}
                 {currentTime
                   .toLocaleDateString("pl-PL", {
@@ -137,7 +137,7 @@ const HeroVariantA = () => {
 
           <div className="lg:col-span-1 flex flex-col justify-center items-center p-8 bg-white">
             <div
-              className="text-[10px] lg:text-xs tracking-[0.3em] text-gray-400 font-light"
+              className="text-[10px] lg:text-xs tracking-[0.3em] text-gray-600 font-normal"
               style={{
                 writingMode: "vertical-rl",
                 textOrientation: "mixed",
